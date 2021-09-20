@@ -1,5 +1,5 @@
 
-export const Header =( )=>{
+export const Header =()=>{
     return(
         <header className={'header'}>
             <nav className={'navigation'}>
