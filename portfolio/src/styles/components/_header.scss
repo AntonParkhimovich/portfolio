@@ -1,3 +1,26 @@
 .header{
     font-family: $font-family;
 }
+.navigation{
+    width: 100vw;
+    height: 50px;
+    background-color: $dark-blue;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid $azure;
+&-items{
+display: flex;
+justify-content: space-around;
+width: 50%;
+}
+&-item{
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $font-size-text;
+    font-weight: $weight-light;
+}
+}
+.active{
+    color: $pink;
+}
