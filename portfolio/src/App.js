@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { languagePack } from './languagePack';
 import LanguageContext from './contextLanguage';
 import { HelloSection } from './components/HelloSection';
+import { About } from './components/About';
 
 function App() {
   const [language, setLanguage]= useState('en')
@@ -18,6 +19,7 @@ function App() {
     <LanguageContext.Provider value={[languagePack[language], setLanguage]}>
       <Header/>
       <HelloSection/>
+      <About/>
    </LanguageContext.Provider>
    </Router>
    
