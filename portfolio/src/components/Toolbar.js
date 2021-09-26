@@ -1,7 +1,7 @@
 export const Toolbar =({text, procents}) => {
     return(
         <div className={'about-skills__toolbar'}>
-            <div className={'about-skills__fill'}>
+            <div style={{width: procents}} className={'about-skills__fill'} >
                 <div className={'about-skills__text'}>
                     {text}
                 </div>
