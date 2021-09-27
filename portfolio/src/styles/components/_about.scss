@@ -5,15 +5,17 @@ font-family: $font-family;
 padding: 0 50px;
 height: 594px;
     &-title{
-        margin: 0 auto;
+        margin: 40px auto;
         font-size: 60px;
         font-weight: 300;
-        margin-bottom: 80px;
+        
     }
     &-title::after{
        content: '';
        display: block;
        border-top: 2px solid black;
+       width: 80px;
+       margin: 0 auto;
     }
     &-main{
     display: flex;
@@ -24,13 +26,12 @@ height: 594px;
 }
 .about-me{
     display: flex;
+    width: 50%;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 50%;
     &__avatar{
-        width: 255px;
-        height: 294px;
+        width: 250px;
+        height: 288px;    
         background: url('../image/avatar.png');
         background-size: cover;
        transform: rotate(-90deg);

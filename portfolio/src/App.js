@@ -10,6 +10,7 @@ import { languagePack } from './languagePack';
 import LanguageContext from './contextLanguage';
 import { HelloSection } from './components/HelloSection';
 import { About } from './components/About';
+import { Portfolio } from './components/Portfolio';
 
 function App() {
   const [language, setLanguage]= useState('en')
@@ -20,6 +21,7 @@ function App() {
       <Header/>
       <HelloSection/>
       <About/>
+      <Portfolio/>
    </LanguageContext.Provider>
    </Router>
    

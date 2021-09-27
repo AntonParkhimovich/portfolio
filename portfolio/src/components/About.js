@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { skills } from '../skillsData';
 import { Toolbar } from './Toolbar';
 export const About =()=>{
-    const [language, setLanguage] = useContext(LanguageContext)
+    const [language] = useContext(LanguageContext)
     return(
         <section className={'about'}>
             <h2 className={'about-title'}>{language.about.title}</h2>

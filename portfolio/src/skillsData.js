@@ -4,5 +4,5 @@ export const skills =[
     {text:'Javssript', procent:'60%'},
     {text:'React', procent:'70%'},
     {text:'Git', procent:'40%'},
-    {text:'Sass', procent:'70%'},
+    {text:'Sass', procent:'70%'}
 ]
