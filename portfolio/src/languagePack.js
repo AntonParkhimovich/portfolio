@@ -36,7 +36,8 @@ export let languagePack={
                 email:'Почта:',
                 company:'Компания:',
                 message:'Cooбщение:',
-                submit:'Отправить'
+                submit:'Отправить',
+                error: 'Это поле является обязательным.'
             }
         }
     },
@@ -77,7 +78,9 @@ export let languagePack={
                 email:'Email:',
                 company:'Company:',
                 message:'Message:',
-                submit:'Send'
+                submit:'Send',
+                error: 'This input is required.'
+
             }
         }
 

@@ -3,7 +3,6 @@ display: flex;
 flex-direction: column;
 font-family: $font-family;
 padding: 0 50px;
-height: 594px;
     &-title{
         margin: 40px auto;
         font-size: 60px;
@@ -21,7 +20,7 @@ height: 594px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 431px;
+    margin-bottom: 100px;
     }
 }
 .about-me{
@@ -45,6 +44,7 @@ height: 594px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-bottom: 50px;
 
    &__toolbar{
     display: flex;
