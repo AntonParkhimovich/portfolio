@@ -28,6 +28,16 @@ export let languagePack={
                 title:"Лэндинг для подключения к Яндекс такси",
                 description:"Лэндинг с возможностью расчета прибыли при работе с данным автопарком, и формой обратной связи, отправляющей данные в Телеграмм при помощи API телеграмма"
             }
+        },
+        contactMe:{
+            title: 'Свяжитесь со мной',
+            form:{
+                name: 'Имя:',
+                email:'Почта:',
+                company:'Компания:',
+                message:'Cooбщение:',
+                submit:'Отправить'
+            }
         }
     },
     en:{
@@ -59,6 +69,17 @@ export let languagePack={
                 title: "Landing page for connecting to Yandex taxi",
                 description: "Landing page with the ability to calculate profit when working with this fleet, and a feedback form that sends data to Telegram using the Telegram API"
             }
+        },
+        contactMe:{
+            title: 'Contact Me',
+            form:{
+                name: 'Name:',
+                email:'Email:',
+                company:'Company:',
+                message:'Message:',
+                submit:'Send'
+            }
         }
+
     }
 }

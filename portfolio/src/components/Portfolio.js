@@ -9,7 +9,6 @@ import { PortfolioNavigation } from "./PortfolioNacigation";
 export const Portfolio =()=>{
     const [language] = useContext(LanguageContext)
     let [itemFilter, setItemFilter]= useState('all')
-    const [active, setActive]= useState(false)
     return(
         <div className={'portfolio'}>
             <h2 className={'portfolio-title'}>{language.portfolio.title}</h2>

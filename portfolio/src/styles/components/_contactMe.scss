@@ -1,0 +1,52 @@
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252934;
+    height: 594px;
+    padding-top: 70px;
+    font-family: $font-family;
+    &__title{
+        color:white;
+        font-size: 60px;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    
+    &__form{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 327px;
+        justify-content: space-between;
+    }
+
+}
+.form-item{
+    height: 40px;
+    border: none;
+    background-color: #1e242c;
+    outline: none;
+    padding: 0 10px;
+    color: white;
+    font-size: 16px;
+}
+.textarea{
+    resize: none;
+    border: none;
+    background-color: #1e242c;
+    height: 140px;
+    padding: 0 10px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+.submit-button{
+    width: 100px;
+    height: 40px;
+    font-family: $font-family;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
