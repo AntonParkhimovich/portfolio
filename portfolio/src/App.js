@@ -14,7 +14,7 @@ import { Portfolio } from './components/Portfolio';
 import { ContactMe } from './components/ContactMe';
 
 function App() {
-  const [language, setLanguage]= useState('en')
+  const [language, setLanguage]= useState('ru')
   return (
     <Router>
     <LanguageContext.Provider value={[languagePack[language], setLanguage]}>
