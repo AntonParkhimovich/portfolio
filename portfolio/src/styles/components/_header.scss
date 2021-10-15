@@ -1,13 +1,16 @@
 .header{
     font-family: $font-family;
-}
-.navigation{
     width: 100vw;
     height: 50px;
     background-color: $dark-blue;
-    display: flex;
-    align-items: center;
     border-bottom: 2px solid $azure;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navigation{
 &-items{
 display: flex;
 justify-content: space-around;
@@ -19,8 +22,77 @@ width: 50%;
     text-transform: uppercase;
     font-size: $font-size-text;
     font-weight: $weight-light;
+    cursor: pointer;
 }
+}
+.container{
+    display: none;
 }
 .active{
     color: $pink;
 }
+.open{
+    left: 50vw !important
+}
+
+@media screen and (max-width: 621px) {
+    .navigation{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 100vw;
+      width: 50vw;
+      height: 100vh;
+      background-color: $dark-blue;
+      transition: 0.4s;
+
+      &-items{
+        flex-direction: column;
+        width: auto;
+        height: 100%;
+      }
+    }
+    .navigation-show-button{
+        display: flex;
+        width: 100px;
+        height: 100px;
+        background-color:  white;
+        position: absolute;
+      }
+      .container {
+        display: inline-block;
+        cursor: pointer;
+        position: fixed;
+        top: 4%;
+        right: 1%;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 2px;
+        background-color: #04c2c9;
+        margin: 9px 0;
+        transition: 0.4s;
+      }
+      
+     
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+      }
+      
+  
+      .change .bar2 {
+        opacity: 0;
+      }
+   
+      .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+      }
+    
+  }

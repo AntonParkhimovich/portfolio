@@ -1,43 +1,12 @@
-import { useContext } from "react";
-import { NavLink } from "react-router-dom";
-import LanguageContext from "../contextLanguage";
+import { useState } from "react";
+import { ButtonHamburger } from "./ButtonHamburger";
+import { Navigation } from "./Navigation";
 export const Header = () => {
-  const [language, setLanguage] = useContext(LanguageContext);
-
+  const[showNavigation, setShowNavigation]= useState(false)
   return (
     <header className={"header"}>
-      <nav className={"navigation"}>
-        <ul className={"navigation-items"}>
-          <NavLink
-            className={"navigation-item"}
-            activeClassName={"active"}
-            to="/"
-          >
-            {language.navigation.home}
-          </NavLink>
-          <NavLink
-            className={"navigation-item"}
-            activeClassName={"active"}
-            to="/about"
-          >
-            {language.navigation.about}
-          </NavLink>
-          <NavLink
-            className={"navigation-item"}
-            activeClassName={"active"}
-            to="portfolio"
-          >
-            {language.navigation.portfolio}
-          </NavLink>
-          <NavLink
-            className={"navigation-item"}
-            activeClassName={"active"}
-            to="contact"
-          >
-            {language.navigation.contact}
-          </NavLink>
-        </ul>
-      </nav>
+       <ButtonHamburger showNavigation={showNavigation} setShowNavigation={setShowNavigation}/>
+     <Navigation showNavigation={showNavigation}/>
     </header>
   );
 };
