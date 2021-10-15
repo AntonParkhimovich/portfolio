@@ -8,7 +8,7 @@ export const Portfolio = () => {
   const [language] = useContext(LanguageContext);
   let [itemFilter, setItemFilter] = useState("all");
   return (
-    <div className={"portfolio"}>
+    <div className={"portfolio"} id='portfolio'>
       <h2 className={"portfolio-title"}>{language.portfolio.title}</h2>
       <div className={"portfolio-header"}>
         <PortfolioNavigation setItemFilter={setItemFilter} />

@@ -3,8 +3,9 @@ import LanguageContext from "../contextLanguage";
 
 export const HelloSection = () => {
   const [language] = useContext(LanguageContext);
+  
   return (
-    <section className={"hello-section"}>
+    <section className={"hello-section"} id='home'>
       <div className={"hello-section__main"}>
         <h2 className={"hello-section__title"}>
           {language.helloSection.title}
