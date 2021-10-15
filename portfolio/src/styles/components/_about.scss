@@ -58,13 +58,31 @@ padding: 0 50px;
    }
 
    &__fill{
-   background-color: $azure;
+  
+   }
+   &__fill-paint{
+    background-color: $azure;
+    animation-name: fill-toolbar;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    width: 100%;
+    height: 100%;
    }
    &__text{
-    margin-left: 2px;
-
+    position: relative;
+    bottom: 30px;
+    left: 10px;
    }
    &__procents{
     color: black;
    }
+}
+@keyframes fill-toolbar{
+    0%{
+        width:0%
+    }
+ 
+    100%{
+        width: 100%;
+    }
 }
