@@ -8,24 +8,25 @@ export const Portfolio = () => {
   const [language] = useContext(LanguageContext);
   let [itemFilter, setItemFilter] = useState("all");
   return (
-    <Fade cascade top  duration={500}>
-    <div className={"portfolio"} id='portfolio'>
-      <h2 className={"portfolio-title"}>{language.portfolio.title}</h2>
-      <div className={"portfolio-header"}>
-        <PortfolioNavigation setItemFilter={setItemFilter} />
-      </div>
-      <div className={"portfolio-main"}>
-        {itemFilter === "all"
-          ? portfolioData.map(({ languageKey, img, github }) => {
+    <Fade cascade top duration={500}>
+      <div className={"portfolio"} id='portfolio'>
+        <h2 className={"portfolio-title"}>{language.portfolio.title}</h2>
+        <div className={"portfolio-header"}>
+          <PortfolioNavigation setItemFilter={setItemFilter} />
+        </div>
+        <div className={"portfolio-main"}>
+          {itemFilter === "all"
+            ? portfolioData.map(({ languageKey, img, github }, index) => {
               return (
                 <PortfoliItem
                   img={img}
                   textData={language.portfolio[languageKey]}
                   github={github}
+                  key={index}
                 />
               );
             })
-          : portfolioData.map(({ languageKey, img, github, tag }) => {
+            : portfolioData.map(({ languageKey, img, github, tag }) => {
               if (tag === itemFilter) {
                 return (
                   <PortfoliItem
@@ -38,8 +39,8 @@ export const Portfolio = () => {
                 return null;
               }
             })}
+        </div>
       </div>
-    </div>
     </Fade>
   );
 };

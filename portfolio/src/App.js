@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
@@ -14,17 +13,17 @@ import { Portfolio } from './components/Portfolio';
 import { ContactMe } from './components/ContactMe';
 
 function App() {
-  const [language, setLanguage]= useState('en')
+  const [language, setLanguage] = useState('en')
   return (
     <Router>
-    <LanguageContext.Provider value={[languagePack[language], setLanguage]}>
-      <Header/>
-      <HelloSection/>
-      <About/>
-      <Portfolio/>
-      <ContactMe/>
-   </LanguageContext.Provider>
-   </Router>
+      <LanguageContext.Provider value={[languagePack[language], setLanguage]}>
+        <Header />
+        <HelloSection />
+        <About />
+        <Portfolio />
+        <ContactMe />
+      </LanguageContext.Provider>
+    </Router>
   );
 }
 

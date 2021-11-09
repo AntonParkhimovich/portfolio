@@ -18,12 +18,13 @@ export const PortfolioNavigation = ({ setItemFilter }) => {
   };
   return (
     <nav className={"portfolio-header__navigation"}>
-      {link.likns.map((item) => {
+      {link.likns.map((item, index) => {
         return (
           <div
             className={toogleActiveClass(item.id)}
             id={item.id}
             onClick={clickHandler}
+            key={index}
           >
             {item.id}
           </div>

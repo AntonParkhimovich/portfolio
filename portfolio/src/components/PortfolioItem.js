@@ -1,10 +1,10 @@
 export const PortfoliItem = ({ img, textData, github }) => {
   return (
-    <div class="card">
-      <div class="front_side">
-        <img src={img} className={"card-image"}></img>
+    <div className="card">
+      <div className="front_side">
+        <img src={img} alt={'card-avatar'} className={"card-image"}></img>
       </div>
-      <div class="back_side">
+      <div className="back_side">
         <h2 className={"item-title"}>{textData.title}</h2>
         <span className={"item-description"}>{textData.description}</span>
         <a href={github} className={"button-github"}>
