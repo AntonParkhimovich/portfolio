@@ -20,13 +20,17 @@ export let languagePack={
                 title:'Приложение по поиску видео на ютуб',
                 description:"Приложение для поиска видео на ютубе, реализованное на  React, с использованием Youtube API, загрузка видео происходит асинхронно, каждый раз при переходе на новую страницу.Реализованно с использованием  react router, и redux"
             },
-            weatheAppReact: {
+            weatherAppReact: {
                 title:'Приложение погоды',
                 description:'Приложение для просмотра погды, с импользованием стороннего API из дополнительного функционала возможность просмотра истории поиска, и определение погоды при помощи текущей геопозиции'
             },
             taxi:{
                 title:"Лэндинг для подключения к Яндекс такси",
                 description:"Лэндинг с возможностью расчета прибыли при работе с данным автопарком, и формой обратной связи, отправляющей данные в Телеграмм при помощи API телеграмма"
+            },
+            weatherAppJavasript:{
+                title:'Приложение погоды',
+                description:'Приложение для просмотра погды написанное на Javasript, с импользованием стороннего API из дополнительного функционала возможность просмотра истории поиска, и определение погоды при помощи текущей геопозиции'
             }
         },
         contactMe:{
@@ -62,13 +66,17 @@ export let languagePack={
                 title: 'YouTube Video Search Application',
                 description: "An application for finding videos on YouTube, implemented in React, using the Youtube API, the video is loaded asynchronously, every time you switch to a new page. Implemented using a react-router, and redux"
             },
-            weatheAppReact: {
+            weatherAppReact: {
                 title: 'Weather App',
                 description: 'Application for viewing the weather, using a third-party API from additional functionality, the ability to view the search history, and determine the weather using the current geolocation'
             },
             taxi:{
                 title: "Landing page for connecting to Yandex taxi",
                 description: "Landing page with the ability to calculate profit when working with this fleet, and a feedback form that sends data to Telegram using the Telegram API"
+            },
+            weatherAppJavasript:{
+                title: 'Weather App',
+                description:'An application for viewing weather, written in Javasript, using a third-party API from additional functionality, the ability to view the search history, and determine the weather using the current location'    
             }
         },
         contactMe:{

@@ -16,8 +16,14 @@ export let portfolioData=[
     },
     {
      img: weather,
-    languageKey:'weatheAppReact',
+    languageKey:'weatherAppReact',
     github:'https://github.com/AntonParkhimovich/weatherapp-React',
     tag:'react'
+    } ,
+    {
+    img: weather,
+    languageKey:'weatherAppJavasript',
+    github:"https://github.com/AntonParkhimovich/weatherapp",
+    tag:'javascript'
     }
 ]
