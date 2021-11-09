@@ -9,6 +9,13 @@
         font-size: 60px;
         font-weight: 300;
     }
+    &-title::after{
+      content: '';
+      display: block;
+      border-top: 2px solid black;
+      width: 80px;
+      margin: 0 auto;
+    }
 }
 .portfolio-header{
     display: flex;
@@ -87,4 +94,8 @@
     align-items: center;
   }
 
-  
+  @media screen and (max-width: 621px){
+    .portfolio-title{
+      font-size: 40px;
+    }
+  }

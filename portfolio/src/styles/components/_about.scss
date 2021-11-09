@@ -56,16 +56,8 @@ padding: 0 50px;
     justify-content: space-between;
     margin-top: 16px;
    }
-
-   &__fill{
-  
-   }
    &__fill-paint{
     background-color: $azure;
-    animation-name: fill-toolbar;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    width: 100%;
     height: 100%;
    }
    &__text{
@@ -85,4 +77,31 @@ padding: 0 50px;
     100%{
         width: 100%;
     }
+}
+@media screen and (max-width: 714px){
+    .about-main {
+        display: flex;
+        margin-bottom: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-title{
+        font-size: 40px;
+    } 
+    .about-me__text {
+        font-size: 16px;
+    }
+    .about-me__avatar{
+        width: 196px;
+        height: 227px;
+    }
+    .about-skills__toolbar{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 375px){
+   .about{
+       padding: 0;
+       text-align: center;
+   }
 }

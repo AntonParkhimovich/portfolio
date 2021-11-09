@@ -21,3 +21,13 @@
     }
 
 }
+@media screen and (max-width: 621px){
+    .hello-section__main{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 375px){
+    .hello-section__main{
+        font-size: 14px;
+    }
+}
