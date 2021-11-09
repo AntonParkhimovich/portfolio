@@ -1,11 +1,13 @@
 import { Link } from "react-scroll";
 import LanguageContext from "../contextLanguage";
 import { useContext} from "react";
+import Fade from 'react-reveal/Fade'; 
 export const Navigation =({showNavigation})=>{
     const [language, setLanguage] = useContext(LanguageContext);
     
     return(
         <nav className={`navigation ${showNavigation? 'open': ''}`}>
+        <Fade top cascade>  
         <ul className={"navigation-items"}>
         <Link
             activeClass="active"
@@ -45,11 +47,13 @@ export const Navigation =({showNavigation})=>{
             spy={true}
             smooth={true}
             duration={500}
+            offset={-50}
             to="contact"
           >
             {language.navigation.contact}
           </Link>
         </ul>
+        </Fade>
       </nav>
     )
 }

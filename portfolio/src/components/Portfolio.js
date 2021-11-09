@@ -1,13 +1,14 @@
 import { useContext, useState } from "react";
 import LanguageContext from "../contextLanguage";
-import { NavLink } from "react-router-dom";
 import { portfolioData } from "../portfolioData";
 import { PortfoliItem } from "./PortfolioItem";
 import { PortfolioNavigation } from "./PortfolioNacigation";
+import Fade from 'react-reveal/Fade';
 export const Portfolio = () => {
   const [language] = useContext(LanguageContext);
   let [itemFilter, setItemFilter] = useState("all");
   return (
+    <Fade cascade top  duration={500}>
     <div className={"portfolio"} id='portfolio'>
       <h2 className={"portfolio-title"}>{language.portfolio.title}</h2>
       <div className={"portfolio-header"}>
@@ -39,5 +40,6 @@ export const Portfolio = () => {
             })}
       </div>
     </div>
+    </Fade>
   );
 };
