@@ -31,6 +31,10 @@ export let languagePack={
             weatherAppJavasript:{
                 title:'Приложение погоды',
                 description:'Приложение для просмотра погды написанное на Javasript, с импользованием стороннего API из дополнительного функционала возможность просмотра истории поиска, и определение погоды при помощи текущей геопозиции'
+            },
+            portfolio:{
+                title:  'Портфолио',
+                description:'Лэндинг портфолио, с возможностью смены языка приложения, формой обратной связи с использованием телеграмм фильтром проектов'    
             }
         },
         contactMe:{
@@ -77,6 +81,10 @@ export let languagePack={
             weatherAppJavasript:{
                 title: 'Weather App',
                 description:'An application for viewing weather, written in Javasript, using a third-party API from additional functionality, the ability to view the search history, and determine the weather using the current location'    
+            },
+            portfolio:{
+                title: 'Portfolio',
+                description:'Portfolio landing page, with the ability to change the application language, feedback form using telegrams by the project filter'    
             }
         },
         contactMe:{
